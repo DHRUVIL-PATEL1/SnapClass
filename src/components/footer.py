@@ -48,3 +48,62 @@ def footer_home():
     </div>
     
     """, unsafe_allow_html=True)
+
+def footer_dashboard():
+
+    st.markdown("""
+    <style>
+
+    .footer-wrap {
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer {
+        padding: 0.75rem 1.5rem;
+        border-radius: 999px;
+
+        background: rgba(0, 0, 0, 0.72);
+        backdrop-filter: blur(12px);
+
+        border: 1px solid rgba(255,255,255,0.08);
+
+        color: rgba(255,255,255,0.78);
+
+        font-size: 1rem;
+        letter-spacing: 0.4px;
+
+        box-shadow:
+            0 8px 24px rgba(0,0,0,0.18);
+
+        transition:
+            transform 0.25s ease,
+            background 0.25s ease,
+            box-shadow 0.25s ease;
+    }
+
+    .footer:hover {
+        transform: translateY(-2px);
+
+        background: rgba(0, 0, 0, 0.82);
+
+        box-shadow:
+            0 12px 30px rgba(0,0,0,0.28);
+    }
+
+    .footer span {
+        color: white;
+        font-weight: 700;
+    }
+
+    </style>
+
+    <div class="footer-wrap">
+        <div class="footer">
+            Built with ambition by <span>DHRUVIL</span> • 2026
+        </div>
+    </div>
+
+    """, unsafe_allow_html=True)
